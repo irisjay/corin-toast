@@ -1,4 +1,4 @@
-var _toast_type = (cordova .platformId === 'browser') ? 'browser' : 'cordova';
+var _toast_type = ( typeof (cordova) === 'undefined' || cordova .platformId === 'browser' ) ? 'browser' : 'cordova';
 
 var toast = function (text) {
 	toast .last =	toast .last
